@@ -21,7 +21,7 @@ def send_message():
     message = request.form['message']
 
     # Nomor WhatsApp tujuan (tanpa spasi)
-    whatsapp_number = '62895372499072'  # Ganti dengan nomor kamu
+    whatsapp_number = '628161909234'  # Ganti dengan nomor kamu
 
     # Buat pesan WhatsApp
     text = f"Halo! Saya {name} {email} {subject} {message}"
@@ -38,5 +38,5 @@ def send_message():
 # # ===============================
 # # RUN SERVER
 # # ===============================
-if __name__ == '__main__':
-    app.run(debug=True, port=5001)
+# if __name__ == '__main__':
+#     app.run(debug=True, port=5001)
