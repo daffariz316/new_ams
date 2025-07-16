@@ -695,11 +695,94 @@
         </div>
 
         <!-- Pop-up 2 -->
-        <div id="popup2" class="popup-overlay fixed inset-0 z-50 flex items-center justify-center p-4 hidden">
+          <div id="popup2" class="popup-overlay fixed inset-0 z-50 flex items-center justify-center p-4 hidden">
+        <div class="popup-content bg-white rounded-lg shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto" data-aos="zoom-in">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 class="text-2xl font-bold text-gray-800">APLIKASI E-SPTPD</h2>
+                    <button onclick="closePopup('popup2')" class="text-gray-400 hover:text-gray-600 text-2xl">
+                        ×
+                    </button>
+                </div>
+                
+                <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-10 h-10 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-2.5 5H9m0 0v-2m0 2h10m0 0v-2m0 2a2 2 0 100-4 2 2 0 000 4z"></path>
+                    </svg>
+                </div>
+                
+                <!-- Video Section -->
+                <div class="mb-6" data-aos="fade-up">
+                    <h3 class="font-semibold text-gray-800 mb-3">Demo Aplikasi:</h3>
+                    <div class="bg-gray-100 rounded-lg p-4">
+                        <video 
+                            controls 
+                            class="w-full max-w-full h-auto rounded-lg shadow-lg"
+                            poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23f3f4f6'/%3E%3Cg fill='%236b7280'%3E%3Ccircle cx='200' cy='130' r='30'/%3E%3Cpath d='M190 120l20 10-20 10z'/%3E%3C/g%3E%3Ctext x='200' y='180' text-anchor='middle' font-family='Arial' font-size='14' fill='%236b7280'%3EAplikasi E-SPTPD%3C/text%3E%3C/svg%3E"
+                        >
+                            <source src="{{ url_for('static', filename='assets/videos/Aplikasi-ESPTPD-Web-Kab-Sleman.mp4') }}" type="video/mp4">
+                            <p class="text-gray-600 text-center py-4">
+                                Browser Anda tidak mendukung pemutaran video. 
+                                <a href="Aplikasi-ESPTPD-Web-Kab-Sleman.wmv" class="text-blue-600 hover:text-blue-800 underline">
+                                    Download video
+                                </a>
+                            </p>
+                        </video>
+                    </div>
+                </div>
+                
+                <div class="space-y-4">
+                    <div data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="font-semibold text-gray-800 mb-2">Klien:</h3>
+                        <p class="text-gray-600">Pemerintah Kabupaten Sleman</p>
+                    </div>
+                    
+                    <div data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="font-semibold text-gray-800 mb-2">Deskripsi Proyek:</h3>
+                        <p class="text-gray-600">Aplikasi E-SPTPD (Elektronik Surat Pemberitahuan Pajak Daerah) adalah sistem digital untuk memudahkan wajib pajak dalam melaporkan dan membayar pajak daerah secara online. Sistem ini mengintegrasikan berbagai jenis pajak daerah dalam satu platform yang user-friendly.</p>
+                    </div>
+                    
+                    <div data-aos="fade-up" data-aos-delay="300">
+                        <h3 class="font-semibold text-gray-800 mb-2">Fitur Utama:</h3>
+                        <ul class="list-disc list-inside text-gray-600 space-y-1">
+                            <li>Pelaporan pajak daerah online</li>
+                            <li>Sistem pembayaran elektronik</li>
+                            <li>Dashboard monitoring untuk admin</li>
+                            <li>Notifikasi otomatis jatuh tempo</li>
+                            <li>Laporan dan analitik pajak</li>
+                            <li>Integrasi dengan sistem perbankan</li>
+                        </ul>
+                    </div>
+                    
+                    <div data-aos="fade-up" data-aos-delay="400">
+                        <h3 class="font-semibold text-gray-800 mb-2">Teknologi yang Digunakan:</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">Vue.js</span>
+                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-sm">Laravel</span>
+                            <span class="bg-red-100 text-red-800 px-2 py-1 rounded text-sm">Redis</span>
+                            <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-sm">PostgreSQL</span>
+                        </div>
+                    </div>
+                    
+                    <div data-aos="fade-up" data-aos-delay="500">
+                        <h3 class="font-semibold text-gray-800 mb-2">Durasi Proyek:</h3>
+                        <p class="text-gray-600">8 bulan (Maret - Oktober 2024)</p>
+                    </div>
+                </div>
+                
+                <div class="mt-6 flex justify-end">
+                    <button onclick="closePopup('popup2')" class="bg-gray-500 text-white px-4 py-2 rounded-lg hover:bg-gray-600 transition-colors duration-300">
+                        Tutup
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- <div id="popup2" class="popup-overlay fixed inset-0 z-50 flex items-center justify-center p-4 hidden">
             <div class="popup-content bg-white rounded-lg shadow-2xl max-w-2xl w-full" data-aos="zoom-in">
                 <div class="p-6">
                     <div class="flex justify-between items-center mb-4">
-                        <h2 class="text-2xl font-bold text-gray-800">E-Commerce Platform</h2>
+                        <h2 class="text-2xl font-bold text-gray-800">APLIKASI E-SPTPD</h2>
                         <button onclick="closePopup('popup2')" class="text-gray-400 hover:text-gray-600 text-2xl">
                             ×
                         </button>
@@ -757,7 +840,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <!-- Pop-up 3 -->
         <div id="popup3" class="popup-overlay fixed inset-0 z-50 flex items-center justify-center p-4 hidden">
